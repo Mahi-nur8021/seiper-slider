@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+
+    <style> 
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+     .enter{
+      background: #222;
+      width: 100%;
+      height: 100vh;
+     }
+     .swiper{
+      width: 100vw;
+      height: fit-content;
+      position: relative;
+       
+     }
+     .swiper-slide img{
+      width: 100%;
+
+     }
+      
+     .swiper-button-next,.swiper-button-prev{
+      color: whitesmoke;
+     }
+    
+      
+      .swiper .swiper-pagination-bullet{
+        background-color: #222;
+      }
+      nav{
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+    </style>
+          
+    
+ </head>
+ <body> 
+  <div class="enter">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="/aston-martin.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/audi-rs-e-tron-gt.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/maserati-mc20.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/maserati-mc20.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/maserati-mc20.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/nio-et5.jpg" alt=""></div>
+       
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+    <nav>
+    <a href="#">Mahi Nur</a>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+       
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+ <script>
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+    autoplay:{
+           delay:2000,
+          disableOnInteraction:false, 
+    },
+  loop: true,
+
+  
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  },
+
+ 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
+ </script>
+</body>
+     
+ </body>
+ </html>
